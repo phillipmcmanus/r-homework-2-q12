@@ -15,13 +15,13 @@ df <- data.frame(
   instrument = c("guitar", "bass", "guitar", "drums")
 )
 
-df[2,3]
-df[c(2,4),c(2,3)]
-df[c(2,4),3]
+df[2,3] #This returns the value in the 2nd row of the 3rd column, "bass"
+df[c(2,4),c(2,3)] #This returns the 2nd and 4th rows and shows only the 2nd and 3rd columns
+df[c(2,4),3] #This returns the values "bass" and "drums" from the instrument column
 
 1:4 
-df[1:4, 1:2]
-df[c(1,1,1,2,2), 1:3]
+df[1:4, 1:2]   #This returns the data frame with all 4 rows but only the first 2 columns
+df[c(1,1,1,2,2), 1:3] #This returns all 3 columns and repeats the first row 3 times then repeats the second row 2 times
 
 vec[0]
 df[1:2, 0]
